@@ -43,7 +43,7 @@ ${email}`
 
 // ✅ FIX HERE 👇
 const reply =
-response.data?.candidates?.[0]?.content?.parts?.[0]?.text;
+apiResponse.data.candidates[0].content.parts[0].text;
 
 res.json({ reply });
 

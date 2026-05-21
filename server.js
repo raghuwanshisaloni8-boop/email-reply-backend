@@ -41,11 +41,7 @@ ${email}`
     }
 );
 
-// ✅ FIX HERE 👇
-const reply =
-apiResponse.data.candidates[0].content.parts[0].text;
-
-res.json({ reply });
+res.json(apiResponse.data);
 
     } catch (error) {
 

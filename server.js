@@ -27,7 +27,7 @@ app.post("/generate", async (req, res) => {
         }
 
 
-        const response = await axios.post(
+        const apiResponse = await axios.post(
     `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`,
     {
         contents: [{
